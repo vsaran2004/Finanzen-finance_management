@@ -48,21 +48,6 @@ const Header = () => {
         <div className="mb-6 w-16 h-1 bg-gray-200 rounded-full"></div>
       </header>
 
-      {/* Mobile Header */}
-      <header className="md:hidden fixed top-0 left-0 w-full bg-white shadow-md text-gray-800 flex justify-between items-center px-4 py-3 z-10">
-        <Link href="/" aria-label="Go to homepage">
-          <Image src="/logo-2.png" alt="Finanzen Logo" width={32} height={32} />
-        </Link>
-        <button 
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="text-2xl text-gray-600"
-          aria-label="Toggle menu"
-          aria-expanded={isMobileMenuOpen}
-        >
-          ☰
-        </button>
-      </header>
-
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <nav className="md:hidden fixed top-14 left-0 w-full bg-white text-gray-800 z-20 shadow-md">
